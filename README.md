@@ -803,7 +803,7 @@ Ci-dessous les résultats obtenus :
 ![Bag of words avec embedding](images/image19.png "image_tooltip")
 
 
-_Figure 18. Bag of words avec embedding  _
+_Figure 18. Bag of words avec embedding_
 
 
          
@@ -994,11 +994,11 @@ De par nos expériences et compétences nous avons soit travaillés en groupe, s
 
 
 
+![Diagramme de Gantt](images/image28.png "image_tooltip")
+
+
+
 ![Diagramme de Gantt](images/image29.png "image_tooltip")
-
-
-
-![Diagramme de Gantt](images/image30.png "image_tooltip")
 
 
 
