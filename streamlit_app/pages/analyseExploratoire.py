@@ -19,6 +19,21 @@ def app():
         \n- **303 752** mots distincts après nettoyage")
     v_spacer(2) 
 
+    st.markdown("### Pré-traitement des données")
+
+    st.write("Le pré-traitement a consisté à : \
+        \n- Transformation des caractères majuscules en minuscules \
+        \n- Insertion d’une espace devant les caractères ?!, ¿ \
+        \n- Remplacement des caractères différents de A-Z,a-z,0-9,., ?, !,, par une espace \
+        \n- Suppression des espaces multiples par une seule \
+        \n- Remplacement des formes de verbes contractés par leur forme complète (par ex. won’t en will not) \
+        \n- Élimination de tout ce qui précède  le mot «Subject: », afin de supprimer le contenu qui précède une réponse ou un transfert. \
+        \n- Découpage de chaque email en phrase (chaîne de caractère se terminant par “.”, “!”, “?”) pour que le dataset soit constitué d’une phrase par ligne.")
+    image = Image.open(image_path("dataset.png"))
+    st.image(image, caption='Dataset')
+
+    v_spacer(2) 
+
     st.markdown("### Occurence des mots")
     st.markdown("#### Distribution des mots les plus fréquents et word cloud")
     image = Image.open(image_path("Frequence_+_WC.png"))
