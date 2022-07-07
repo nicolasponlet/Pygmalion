@@ -13,6 +13,7 @@ def app():
     col2.header("Les e-mails de la société ENRON")
     v_spacer(2)
 
+    st.markdown("#### Choix du jeu de données")
     st.write("Nous avons démarré ce projet par l’étude de **différents datasets** pour générer notre corpus. \
         \n- Les e-mails d'**Hillary Clinton** lors de sa mission de Secrétaire d’Etat en 2015  \
         \n- Les e-mails de la société **ENRON**  \

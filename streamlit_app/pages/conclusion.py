@@ -61,12 +61,12 @@ def app():
     v_spacer(2) 
 
     st.markdown("### Perspectives")
-    image = Image.open(image_path("corr_ortho.png"))
-    st.image(image, width=300)    
-    st.write("L'intégration d'un **correcteur orthographique** permettrait de rendre l’outil plus complet pour les utilisateurs.")
-    v_spacer(2) 
-
     image = Image.open(image_path("recaptcha.png"))
     st.image(image, width=300)    
     st.write("Pour palier au fait que le score se base sur la prédiction exacte du mot attendu, l'ajout d'un ystème de validation de la **prédiction par des \"juges\"** humains, type CAPTCHA, pourrait améliorer grandement l'efficacité de notre outil.")
+    v_spacer(2) 
+
+    image = Image.open(image_path("corr_ortho.png"))
+    st.image(image, width=300)    
+    st.write("L'intégration d'un **correcteur orthographique** permettrait de rendre l’outil plus complet pour les utilisateurs.")
     v_spacer(2) 
