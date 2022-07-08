@@ -8,12 +8,12 @@ Promotion		Octobre 2021 Continue DS
 
 Participants :
 
-
-
 * Nicolas PONLET (NP), 36 ans, ingénieur informaticien, 8 années d’expérience dans le secteur des banques et assurances
 * Adrien SENECAL (AS), 37 ans, Docteur en Biologie Moléculaire. 10 années d’expérience comme chercheur à l’Ecole Normale Supérieure (Paris) et Albert Einstein College Institute (New York).
 * Patrick HUTTER (PH) 61 ans, Ingénieur Arts & Métiers. 35 années d’expérience industrielle comme Directeur Industriel et Directeur R&D dans différents groupes internationaux et PMI.
 
+## Modèle GPT2 pré-entrainé
+Les fichiers de sauvegardes du meilleur modèle présenté dans ce rapport n'est pas fournis dans Github à cause de sa taille trop volumineuse. Vous pourrez télécharger une version compressé sur [Google Drive](https://drive.google.com/file/d/1DIHT_4Q1cbRDWzVgU26U9bXaABbSfWtG/view?usp=sharing).
 
 ## Introduction
 
