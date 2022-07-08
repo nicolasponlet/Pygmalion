@@ -1,8 +1,4 @@
-![Datascientest](images/image1.png "image_tooltip")
-
-
-_Rapport Technique d’évaluation_
-
+<img src="images\Pygmalion_logo.jpg" alt="Pygamlion" width="200"/>
 
 # Pygmalion
 
