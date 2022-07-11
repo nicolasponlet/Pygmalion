@@ -20,7 +20,7 @@ def app():
     image = Image.open(image_path("scores.png"))
     st.image(image)    
     st.write("En termes de résultat, ceux que nous avons obtenu sont plutôt encourageants. \
-        Le niveau de performance de notre modèle à progressé de **30%** à plus de **70%**, c’est-à-dire que pour générer un texte, notre outil réduira de 70% le nombre de lettres à saisir au clavier.")   
+        Le niveau de performance de notre modèle à progressé de **50%** à plus de **80%**, c’est-à-dire que pour générer un texte, notre outil réduira de 80% le nombre de lettres à saisir au clavier.")   
     v_spacer(2) 
 
     st.markdown("#### Applications")
