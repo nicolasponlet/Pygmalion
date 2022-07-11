@@ -1164,7 +1164,7 @@ Par ailleurs, notre calcul de la performance est basé sur la génération de mo
     * _Modélisation avec mécanisme d’attention_
         * _Modèle GRU + Attention Bahdanau_
         * _Modèle GRU + Attention Luong_
-        * _Analyse des résultats _
+        * _Analyse des résultats_
         * _Bonnes prédictions Vs. Mauvaises prédictions_
         * _Prédiction du mot suivant sachant une mauvaise prédiction_
 * _Sprint 4 : Transformers_
