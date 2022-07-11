@@ -1126,7 +1126,7 @@ Par ailleurs, notre calcul de la performance est basé sur la génération de mo
         * _Remplacement des données manquantes par un caractère « »_
         * _Tokenization par mots_
         * _Création d’un dataframe df_words contenant les mots classés par  leur fréquence dans les e-mails_
-    * _1er axe d’analyse : Mots les plus utilisés_
+    * _1<sup>er</sup> axe d’analyse : Mots les plus utilisés_
         * _Génération d’un wordcloud_
         * _Graphe des mots / fréquence_
     * _2<sup>e</sup> axe d’analyse. : l’objet des emails_
@@ -1136,7 +1136,7 @@ Par ailleurs, notre calcul de la performance est basé sur la génération de mo
     * _3<sup>e</sup> axe : Fréquence et ordre des lettres_
         * _Construction du tableau de probabilité de suivi d’une lettre par une autre lettre_
         * _Analyse de la probabilité qu’une voyelle soit suivie d’une consonne et qu’une consonne soit suivie d’une voyelle ou que la dernière lettre d’un mot soit une consonne ou une voyelle_
-    * _4e axe : Nombre v/s diversité des mots et taille des mails_
+    * _4<sup>e</sup> axe : Nombre v/s diversité des mots et taille des mails_
     * _5<sup>e</sup> axe : Fréquence et diversité de la nature des mots (tag)_
 * _Sprint 2 : Modélisation simple d’auto-completion_
     * _Création des classes emails, dataset, occurrence, ngram_
@@ -1154,25 +1154,25 @@ Par ailleurs, notre calcul de la performance est basé sur la génération de mo
         * _Effet de la position du mot dans la phrase_
 * _Sprint 3 : Modélisation seq2seq_
     * _Modélisation sans mécanisme d’attention_
-        * _Comparaison modèles sur le dataset pré-processé avec et sans stop-words de 10000 et 50000 emails, _
+        * _Comparaison modèles sur le dataset pré-processé avec et sans stop-words de 10000 et 50000 emails_
         * _Word embedding Gensim avec le dataset pré-processé d’ENRON de 10000 mails  Vs. « glove-wiki-gigaword-300 »_
         * _Comparaison de la performance des 4 modèles suivant_
             * _Embedding context – Dropout – Pooling – Embedding start – Flatten – Concat – Dense_
             * _Embedding context –  Pooling – Embedding start – Flatten – Concat – Dense with l1 regularization – Next char_
-            * _ LSTM_
+            * _LSTM_
             * _GRU_
     * _Modélisation avec mécanisme d’attention_
         * _Modèle GRU + Attention Bahdanau_
         * _Modèle GRU + Attention Luong_
         * _Analyse des résultats _
         * _Bonnes prédictions Vs. Mauvaises prédictions_
-        * _ Prédiction du mot suivant sachant une mauvaise prédiction_
+        * _Prédiction du mot suivant sachant une mauvaise prédiction_
 * _Sprint 4 : Transformers_
     * _Construction d’un modèle d’attention MultiHead_
         * _Construction et compilation du modèle_
         * _Entrainement du modèle sur une base de 1000 mails, 20000 mots_
         * _Analyse des résultats – Prédictions_
-    * _Modèle GPT2 _
+    * _Modèle GPT2_
         * _Modèle pré-entraîné_
         * _Modèle entraîné sur le dataset ENRON_
         * _Comparaison de la performance des 2 modèles_
