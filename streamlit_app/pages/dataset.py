@@ -13,6 +13,12 @@ def app():
     col2.header("Les e-mails de la société ENRON")
     v_spacer(2)
 
+    st.markdown("#### Illustration de l'auto-complétion")
+
+    image = Image.open(image_path("dataset.png"))
+    st.image(image)
+    v_spacer(2) 
+    
     st.markdown("#### Choix du jeu de données")
     st.write("Nous avons démarré ce projet par l’étude de **différents datasets** pour générer notre corpus. \
         \n- Les e-mails d'**Hillary Clinton** lors de sa mission de Secrétaire d’Etat en 2015  \
@@ -20,13 +26,29 @@ def app():
         \n\nLe dataset retenu a été finalement celui de la société **ENRON**, plus riche en contenu et plus proche du monde industriel. \
         \n\nCependant il est intéressant de noter qu’à tout moment il serait possible de remplacer le dataset par un autre. Nous pourrions, par la suite, **comparer la performance** de notre modèle avec un autre dataset pour mesurer sa robustesse.")
     v_spacer(2)
-        
+
     st.markdown("#### Principales caractéristiques du jeu de données ENRON")
     st.write("- Environ **500 000 mails** échangés entre **158 collaborateurs** du groupe \
         \n- Libre d’accès et de droit, suite à la faillite du groupe en 2001. \
         \n- Répond à une **problématique d’entreprise** appartenant à un domaine d’activité bien précis qu'est l'**énergie**. \
         \n- https://www.cs.cmu.edu/~./enron/ :")
     v_spacer(2)
+        
+    st.markdown("#### Pré-traitement des données")
+    st.write("Le pré-traitement a consisté à : \
+        \n- Transformation des caractères majuscules en minuscules \
+        \n- Insertion d’une espace devant les caractères ?!, ¿ \
+        \n- Remplacement des caractères différents de A-Z,a-z,0-9,., ?, !,, par une espace \
+        \n- Suppression des espaces multiples par une seule \
+        \n- Remplacement des formes de verbes contractés par leur forme complète (par ex. won’t en will not) \
+        \n- Élimination de tout ce qui précède  le mot «Subject: », afin de supprimer le contenu qui précède une réponse ou un transfert. \
+        \n- Découpage de chaque email en phrase (chaîne de caractère se terminant par “.”, “!”, “?”) pour que le dataset soit constitué d’une phrase par ligne.")    
+    
+    st.write("Après nettoyage des données, nous obtenons un corpus avec : \
+        \n- **497 560** mails \
+        \n- **135 millions** de mots \
+        \n- **303 752** mots distincts après nettoyage")
+    v_spacer(2) 
     
     st.markdown("#### Thématiques fréquentes")
     image = Image.open(image_path("Top_20_sujets_emails.png"))
@@ -49,3 +71,5 @@ def app():
         \n- En première place on retrouve logiquement le nom de la société **Enron** \
         \n- En deuxième, le mal des grandes sociétés : les **réunions**. \
         \n- Les mots suivants décrivent bien l'activité du groupe (**energy**, **gas**) et le système de pilotage en énergie de la Californie (HourAhead + codesite)")
+
+    
